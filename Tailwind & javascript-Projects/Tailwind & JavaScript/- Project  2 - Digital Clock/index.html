@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Import Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center w-full h-[100vh]">
+    <div class="text-gray-50 text-5xl text-center ">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="session">AM</span>
+    </div>
+    <footer class="absolute bottom-0 bg-slate-700 w-full h-[50px] flex justify-around items-center">
+        <h4 class="text-gray-50">developed by <span class="text-red-500 ">❤️ </span><a href="https://tahadev.rf.gd" target="_blank" class="decoration-4 text-green-400 hover:underline ">Taha Dev</a></h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

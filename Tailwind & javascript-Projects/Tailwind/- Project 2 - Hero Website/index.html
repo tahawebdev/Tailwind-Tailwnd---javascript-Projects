@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Project - 2 - Hero Section </title>
+    <!-- Import Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main Styles -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-zinc-800">
+    <!-- Navbar Section -->
+    <section class="">
+        <nav class="flex justify-around flex-col items-center my-5 md:flex md:flex-row md:justify-around md:items-center md:h-[50px] ">
+            <div class="">
+                <img src="images/logo.png" width="40px" class="" alt="">
+            </div>
+            <div class="flex list-none gap-5 my-5">
+                <li><a href="#home" class="text-gray-50 hover:text-blue-300">Home</a></li>
+                <li><a href="#app" class="text-gray-50 hover:text-blue-300">Our App</a></li>
+                <li><a href="#contact" class="text-gray-50 hover:text-blue-300">Contact Us</a></li>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar Section End -->
+
+    <!-- Hero Section -->
+    <section class="my-5 h-[100vh]" id="home">
+        <div class=" w-full flex justify-center items-center flex-col h-[50%] my-[-50px]">
+            <h1 class=" font-bold text-slate-50 text-center">
+                Designing Interfaces: <br>
+                A User-Centered Approach
+            </h1>
+            <p class="text-center text-[14px] text-slate-300 my-5 ">
+                This book covers the latest design principles and techniques, <br>
+                including responsive design, mobile interface design, and user <br>
+                research methodologies.
+                </p>
+                <div class="flex gap-5">
+                    <button class="flex items-center gap-2 bg-slate-700 px-3 py-2 rounded-md hover:bg-slate-600">
+                        <i class="fa-brands fa-apple text-3xl text-gray-100"></i>
+                        <div>
+                        <p class="text-gray-50 text-[10px] font-medium">Dowanload On</p>
+                        <h5 class="text-gray-50 font-bold">AppStore</h5>
+                    </div>
+                </button>
+                <button class="flex items-center gap-2 bg-slate-700 px-3 py-2 rounded-md hover:bg-slate-600">
+                    <i class="fa-brands fa-google-play text-3xl text-gray-100"></i>
+                    <div>
+                        <p class="text-gray-50 text-[10px] font-medium">Dowanload On</p>
+                        <h5 class="text-gray-50 font-bold">Google Play</h5>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- App Section  -->
+            <div class="flex justify-center items-start">
+                <div class="bg-gray-600 w-[2px] h-[30px] rounded-md my-[5rem]"></div>
+                <div class="bg-gray-600 w-[2px] h-[50px] rounded-md my-[8rem] mx-[-2px]"></div>
+                <div class="bg-gray-600 w-[2px] h-[50px] rounded-md my-[12rem]"></div>
+                <br>
+                <div class="w-[170px] h-[350px] bg-gray-600 rounded-3xl flex justify-center items-center" id="app">
+                    <img src="images/phone.png" alt="" class="w-[150px] h-[300px]">
+                </div>
+                <div class="bg-gray-600 w-[2px] h-[50px] rounded-md my-[10rem]"></div>
+            </div>
+        <!-- App Section End -->
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Footer Section -->
+
+    <footer class="absolute bottom-0 bg-slate-700 w-full h-[50px] flex justify-around items-center">
+        <h4 class="text-gray-50">developed by <span class="text-red-500 ">❤️ </span><a href="https://tahadev.rf.gd" target="_blank" class="decoration-4 text-green-400 hover:underline ">Taha Dev</a></h4>
+    </footer>
+</body>
+</html>

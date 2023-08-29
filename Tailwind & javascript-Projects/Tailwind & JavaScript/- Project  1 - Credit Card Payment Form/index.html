@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #3 - Creadit Card Payement Form</title>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }.credit-card{
+            background: linear-gradient(to top, #977ff0, #947be9, #9078e1, #8d74da, #8971d3, #767edf, #618ae8, #4795ee, #00b0fb, #00c9fc, #00e0f5, #50f4e9);
+        }
+    </style>
+</head>
+<body class="bg-blue-300">
+    <div class="flex justify-center items-center flex-col w-full h-[100vh]">
+        <!-- Card Styling -->
+        <div class="form w-[320px] h-[500px] flex justify-center items-center flex-col bg-gray-300 rounded-md">
+            <div class="credit-card w-[80%] h-[200px] rounded-xl ">
+                <div class="flex justify-around flex-row">
+                    <div class="my-5">
+                        <img src="images/chip.png" width="30px"  class=" ">
+                    </div>
+                    <div class="my-5">
+                        <img src="images/master-card.png" width="50px"  class=" ">
+                    </div>
+                </div>
+                <div class="mx-5">
+                    <img src="images/plus.PNG" width="30px" class="rounded-sm mx-5">
+                </div>
+                <div class="flex justify-around items-center my-3 flex-col w-full ">
+                    <div class="text-gray-50">
+                        <span id="number">#### #### #### ####</span>
+                    </div>
+                    <div class="flex justify-around w-full text-gray-50">
+                        <h5 id="cvc">123</h5>
+                        <h5 id="date">00/00</h5>
+                    </div>
+                    <div class="text-gray-50 w-full flex px-5" id="name">
+                        Your Name
+                    </div>
+                </div>
+            </div>
+            <!-- Card Styling End -->
+    
+            <!-- From Section -->
+            <div>
+                
+                <form>
+                    <div class="flex items-center flex-col py-5 ">
+                        <div class="">
+                            <h4 class="text-blue-600 text-[12px] my-3 text-center">After Every 4 Numbers Leave A Space</h4>
+                            <input type="text" class="w-full h-[35px] outline-none px-5 rounded-md" placeholder="Card Number" id="numberInput" required>
+                        </div>
+                        <div class="py-3">
+                            <input type="text" class="w-full h-[35px] outline-none px-5 rounded-md" placeholder="Full Name" id="nameInput" required>
+                        </div>
+                        <div class="py-3 flex justify-center gap-2">
+                            <input type="text" class="w-[35%] h-[35px] outline-none px-5 rounded-md" placeholder="MM/YY" id="dateInput" required>
+                            <input type="text" class="w-[35%] h-[35px] outline-none px-5 rounded-md" placeholder="CVC"  id="cvcInput" required>
+                        </div>
+                        <div>
+                            <button class="bg-red-500 px-20 py-2 rounded-sm text-gray-50 hover:bg-red-600">Pay Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- From End -->
+        </div>
+    </div>
+    <footer class="absolute bottom-0 bg-slate-700 w-full h-[50px] flex justify-around items-center">
+        <h4 class="text-gray-50">developed by <span class="text-red-500 ">❤️ </span><a href="https://tahadev.rf.gd" target="_blank" class="decoration-4 text-green-400 hover:underline ">Taha Dev</a></h4>
+    </footer>
+
+    <!-- Import javaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

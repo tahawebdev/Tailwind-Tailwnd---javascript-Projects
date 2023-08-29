@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title># Project 3 - Password Generator </title>
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Import Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Import Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main Styles -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* body{
+            background: linear-gradient(to right top, #0f5a6f, #007b86, #009b81, #00b862, #87cf28);
+        } */
+        /* .content{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: ;
+        } */
+        /* .instagram{
+            color: linear-gradient(to right top, #f9ce34, #ffaf31, #ff903d, #ff704d, #ff5160, #f9396e, #ef1f7e, #e0008f, #cf00a0, #b800b3, #960ec5, #6228d7);
+        } */
+    </style>
+</head>
+<body class="">
+    <div class="bg-gray-700 w-full h-[100vh] flex justify-center items-center flex-col gap-2 h-[100vh]">
+        <div class="flex text-center items-center justify-center flex-col">
+            <h1 class="text-gray-50 text-4xl text-center font-medium w-[80%]">
+                Generate A
+            </h1>
+             <h1 class="text-green-300 text-4xl text-center font-medium flex items-center flex-col gap-5 bt-green-700 border-solid underline">
+                Random Password
+            </h1>  
+        <br>
+        <div class="flex flex-col items-center">
+            <div class="flex flex-col w-full">
+                <input type="number" class="outline-none w-full h-[50px] px-5 rounded-md" placeholder="Number" id="length" required>
+                <br>
+                <div class="flex justify-center items-center gap-2">
+                    <input type="text" class="outline-none w-full h-[50px] px-5 rounded-md" placeholder="Password" id="password" required>
+                    <br>
+                    <button class="px-3 py-2 rounded-full bg-red-500" id="regenerate" onclick="createPassword()">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                </div>
+                <br>
+                <div class="flex flex-col items-center jusdtify-center">
+                    <!-- <div>
+                        <label for="upper" class="text-cyan-600 text-xl font-semibold">Uppercase</label>
+                        <input type="checkbox" class=" cursor-pointer" id="upper">
+                        
+                        <label for="lower" class="text-cyan-600 text-xl font-semibold">Lowercase</label>
+                        <input type="checkbox" class=" cursor-pointer" id="lower">
+                    </div>
+                    <div>
+
+                        <label for="symboles" class="text-cyan-600 text-xl font-semibold">Symboles</label>
+                        <input type="checkbox" class=" cursor-pointer" id="symboles">
+                        
+                        <label for="numbers" class="text-cyan-600 text-xl font-semibold">Number</label>
+                        <input type="checkbox" class=" cursor-pointer" id="numbers">
+                    </div>
+                </div> -->
+                <div class="flex justify-around gap-2 my-5 text-gray-0 text-xl">
+                    <button class="bg-green-400 px-2 py-2 rounded-md hover:bg-green-500 hover:text-gray-700" onclick="createPassword()">
+                        <i class="fa-solid fa-bolt"></i>
+                        Generate
+                    </button>
+                    <button class="bg-green-400 px-2 py-2 rounded-md hover:bg-green-500 hover:text-gray-700" onclick="copyPassword()">
+                        <i class="fa-regular fa-copy rounded-md"></i>
+                        copy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="absolute bottom-0 bg-slate-700 w-full h-[50px] flex justify-around items-center">
+    <h4 class="text-gray-50">developed by <span class="text-red-500 ">❤️ </span><a href="https://tahadev.rf.gd" target="_blank" class="decoration-4 text-green-400 hover:underline ">Taha Dev</a></h4>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

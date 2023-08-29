@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Project - 1 - Login Form</title>
+    <!-- Import Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: 'Inter', sans-serif;
+            }
+        </style>
+</head>
+<body>
+    <!-- Login From Section Start -->
+    <div class="w-full h-[100vh] bg-slate-900 flex justify-center items-center">
+        <div class="w-[70%] h-[55%] sm:w-[40%] h-[40%] bg-slate-800 rounded-md border border-gray-500">
+            <h1 class="text-slate-100 font-bold text-xl px-5 py-6">Sign in to your account</h1>
+            <div class="flex justify-center items-start flex-col py-1 px-5 relative">
+                <label for="email" class="font-medium text-slate-100 py-2 text-[13px]">Your email</label>
+                <input type="email" class="w-[100%] h-[40px] outline-none rounded-md border-gray-50 bg-slate-600 px-3 text-[17px] font-medium" placeholder="name@company.com" id="email">
+            </div>
+            <div class="flex justify-center items-start flex-col py-1 px-5 relative">
+                <label for="password" class="font-medium text-slate-100 py-2 text-[13px]">Password</label>
+                <input type="password" class="w-[100%] h-[40px] outline-none rounded-md border-gray-50 bg-slate-600 px-3 flex font-bold text-2xl" placeholder="........." id="password">
+            </div>
+            <div class="flex justify-around items-center my-2">
+                <div class="flex gap-5 items-center">
+                    <input type="checkbox" class="bg-slate-600">
+                    <span class="font-light text-gray-50 text-[14px]">Remember me</span>
+                </div>
+                <div>
+                    <a href="" class="font-semibold text-cyan-600 decoration-none text-[14px] hover:decoration-4">Forget Password</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="w-[90%] h-[35px] font-semibold bg-blue-600 text-[14px] text-gray-50 rounded-[6px] hover:bg-blue-700">Sign Up</button>
+            </div>
+            <div class="flex justify-start items-center gap-2 py-4 px-5">
+                <span class="text-[13px] text-gray-300">Don’t have an account yet?</span>
+                <a href="#" class="text-[13px] text-blue-500 font-semibold"> Sign Up</a>
+            </div>
+        </div>
+    </div>
+    <!-- Login From Section End -->
+    <footer class="absolute bottom-0 bg-slate-700 w-full h-[50px] flex justify-around items-center">
+        <h4 class="text-gray-50">developed by <span class="text-red-500 ">❤️ </span><a href="https://tahadev.rf.gd" target="_blank" class="decoration-4 text-green-400 hover:underline ">Taha Dev</a></h4>
+    </footer>
+</body>
+</html>
