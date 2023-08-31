@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Project 6 - Gradient Color Generator</title>
+    <!-- Import Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Styles -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <!-- Import Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex flex-col justify-center items-center bg-indigo-400" id="body">
+    <h1 class="text-3xl text-center font-bold text-red-200">Gradient Color Generator</h1>
+    <h1 class="text-xl text-center font-bold text-blue-200">Generate Your Gradient Color !!</h1>
+    <div class="md:w-[40%] md:h-[70%] w-[70%] h-[70%] flex justify-center items-center bg-gray-50 rounded-xl">
+        <div class="w-[85%] h-[90%] bg-cyan-500 flex flex-col items-center rounded-md">
+           <div class="w-[90%] h-[50%] bg-green-300 rounded-md my-5" id="gardienDiv">
+        </div>
+        <div class="w-full flex justify-around items-center">
+
+            <div class="flex flex-col outline-none border-none">
+                <label class="w-32 mx-[10px]" for="direction">Direction</label>
+                <select class="w-[70px] mx-[10px] h-[40px] border-2 border-green-50 outline- cursor-pointer" name="" id="direction">
+               <option value="">Top</option>
+               <option value="">Right Top</option>
+               <option value="">Right</option>
+               <option value="">Right Bottom</option>
+               <option value="">Bottom</option>
+               <option value="">Left Bottom</option>
+               <option value="">Left</option>
+               <option value="">Left Top</option>
+            </select>
+        </div>
+        <div class="flex flex-col">
+            <label for="" class="mx-[-30px]">Colors</label>
+            <div class="mx-[-30px]">
+                <input class="cursor-pointer  h-[30px] border-none outline-none" type="color" >
+                <input class="cursor-pointer  h-[30px] border-none outline-none" type="color">
+            </div>
+        </div>
+        </div>
+        <div class="w-[85%] h-[70px] my-5 rounded-md border-2 border-violet-300">
+            <p class="text-[12px] text-center font-medium my-1">
+                background-image: linear-gradient(to right top, #051937, #004d7a);
+            </p>
+        </div>
+        <div class="w-full flex justify-around gap-2">
+            <button class="text-center w-[100px] h-[50px] bg-purple-400 hover:bg-violet-500  text-gray-50 text-md font-medium px-2 my-3 rounded-md">Generate</button>
+            <button class="text-center w-[100px] h-[50px] bg-purple-400 hover:bg-violet-500  text-gray-50 text-md font-medium px-6 my-3 rounded-md">Copy</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
